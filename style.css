@@ -71,13 +71,13 @@ body{
     width: 100%;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    background-color: #25517B;
+    background-color: #534092;
     border: none;
 }
 
 .submit:hover{
     box-shadow: rgba(0, 0, 0, 0.742) 0 3px 4px;
-    background-color: #A6529A;
+    background-color: #EC526A;
 }
 
 .incorrect{
