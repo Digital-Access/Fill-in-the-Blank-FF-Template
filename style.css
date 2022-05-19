@@ -1,0 +1,153 @@
+@font-face {
+    font-family: gothamMed;
+    src: url(https://a.storyblok.com/f/112136/x/5e402b0b67/gotham-medium.otf);
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url(https://a.storyblok.com/f/112136/x/1e7232d46e/gotham-book.otf);
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url(https://a.storyblok.com/f/112136/x/361f778928/gotham-bold.otf);
+}
+
+*{
+    font-family: gothamLight, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease 0.2s;
+    color: white;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-family: gothamBold, sans-serif;
+    font-weight: bold;
+}
+
+.question{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.image{
+    max-height: 10rem;
+    width: auto;
+}
+
+.mainContainer{
+    padding: 1rem;
+}
+
+.storyElement{
+    line-height: 2rem;
+}
+
+.submitContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 3px;
+}
+
+.submit{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #25517B;
+    border: none;
+}
+
+.submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.742) 0 3px 4px;
+    background-color: #A6529A;
+}
+
+.incorrect{
+    background-color: #ca2626;
+}
+
+.incorrect:hover{
+    background-color: #ca2626;
+    box-shadow: none;
+}
+
+.correct{
+    background-color: rgb(18, 169, 71);
+    cursor: default;
+}
+
+.correct:hover{
+    background-color: rgb(18, 169, 71);
+    box-shadow: none;
+}
+
+.input{
+    border: none;
+    border-bottom: white solid 2px;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+}
+
+.input:focus{
+    outline: none !important;
+}
+
+.celebration{
+    max-height: 12rem;
+    width: auto;
+    border-radius: 10px;
+}
+
+.celebrationContainer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.triesContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.livesBlock{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.468);
+    padding: 0.5rem;
+    border: solid white 1px;
+    min-width: 11.5rem;
+}
+
+@media (max-width: 450px) {
+    .image{
+        display: none;
+    }
+}
